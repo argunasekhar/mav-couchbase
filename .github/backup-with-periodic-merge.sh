@@ -13,7 +13,7 @@ function _usage
    echo "	--repo=<s>              Repository name used for the backup (default: couchbase)"
    echo "	--cluster=<s>           The cluster address (default: localhost)"
    echo " --username=<s>          Cluster Admin or RBAC username (default: Administrator)"
-   echo "	--password=<s>          Cluster Admin or RBAC password (default: )"
+   echo "	--password=<s>          Cluster Admin or RBAC password (default: mAv@cb123)"
    echo "	--threads=<n>           Number of threads used for backup process (default: 2)"
    echo "	--restorepoints=<n>     Number of backups at any given time for restore during outage (default: 3)"
    exit 5
@@ -21,7 +21,7 @@ function _usage
 
 # set the defaults, these can all be overriden as environment variables or passed via the cli
 CB_USERNAME=${CB_USERNAME:='Administrator'}
-CB_PASSWORD=${CB_PASSWORD:='password'}
+CB_PASSWORD=${CB_PASSWORD:='mAv@cb123'}
 CLUSTER=${CLUSTER:='localhost'}
 ARCHIVE=${ARCHIVE:='/backups'}
 REPO=${REPO:='couchbase'}
