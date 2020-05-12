@@ -15,7 +15,7 @@ function _usage
    echo " --username=<s>          Cluster Admin or RBAC username (default: Administrator)"
    echo "	--password=<s>          Cluster Admin or RBAC password (default: mAv@cb123)"
    echo "	--threads=<n>           Number of threads used for backup process (default: 2)"
-   echo "	--restorepoints=<n>     Number of backups at any given time for restore during outage (default: 3)"
+   echo "	--restorepoints=<n>     Number of backups at any given time for restore during outage (default: 7)"
    exit 5
 }
 
@@ -26,7 +26,7 @@ CLUSTER=${CLUSTER:='localhost'}
 ARCHIVE=${ARCHIVE:='/backups'}
 REPO=${REPO:='couchbase'}
 THREADS=${THREADS:=2}
-RESTOREPOINTS=${RESTOREPOINTS=3}
+RESTOREPOINTS=${RESTOREPOINTS=7}
 
 #***************************************************************************#
 BACKUPREGEX="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}_[0-9]{2}_[0-9]{2}.[0-9]{6}"
